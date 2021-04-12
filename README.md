@@ -13,7 +13,7 @@ The model has been currently trained only for the consonants, vowels can also be
 The input image of the hindi handwritten word is taken as input and preprocessed.
 The preprocessing involves:
  =>Image noise removal - We have preprocessed our input image in such a way that noises due to variable lighting conditions, shadows, various noisy blobs are removed.
- =>Image deskewing- If the word in our input image is skewed or written at an angle, we deskew the word to bring it to proper alignment. ie. if our word is at an angle of 45 degree to the x axis we change the angle to 0 degree.\n
+ =>Image deskewing- If the word in our input image is skewed or written at an angle, we deskew the word to bring it to proper alignment. ie. if our word is at an angle of 45 degree to the x axis we change the angle to 0 degree.<br>
  => Removing SHIROREKHA- The line on which our hindi word is written is called shirorekha. In our Image preprocessing, We have prepared an algorithm to remove shirorekha, after removing shirorekha, we parse through individual words to detect them and output the string in the result.\n
 Each character has been segmented and then predicted by our model.
 
